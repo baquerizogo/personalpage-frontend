@@ -1,0 +1,41 @@
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+
+class MyDocument extends Document {
+    static async getInitialProps(ctx) {
+        const initialProps = await Document.getInitialProps(ctx)
+        return { ...initialProps }
+    }
+
+
+    render() {
+        
+        return (
+            <Html lang="en" >
+                <Head>
+                    {/*Stylesheets*/}
+                    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+                    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/> 
+                    
+                    <link rel="manifest" href="/manifest.json"/>
+
+                    <meta property="og:title" content="José Baquerizo"/>
+                    <meta name="twitter:title" content="José Baquerizo"/>
+                    
+                    <meta name="description" content="An Ecuadorian Web developer and UI/UX Designer based in Salinas"/>
+                    <meta property="og:description" content="An Ecuadorian Web developer and UI/UX Designer based in Salinas"/>
+                    <meta name="twitter:description" content="An Ecuadorian Web developer and UI/UX Designer based in Salinas"/>
+                    
+                    <meta property="og:image" content="/images/logo.png"/>
+                    <meta name="twitter:image" content="/imges/logo.png"/>
+                </Head>
+                <body className="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white transition-colors">
+                    <Main />
+                    <NextScript />
+                </body>
+            </Html>
+        )
+    }
+}
+
+export default MyDocument
