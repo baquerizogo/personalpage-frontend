@@ -29,7 +29,7 @@ class MyDocument extends Document {
                     <meta property="og:image" content="/images/logo.png"/>
                     <meta name="twitter:image" content="/imges/logo.png"/>
                 </Head>
-                <body className="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white transition-colors">
+                <body className="bg-background text-gray-800 transition-all">
                     <Main />
                     <NextScript />
                 </body>
