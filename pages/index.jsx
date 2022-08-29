@@ -5,7 +5,7 @@ import Layout from "@/layouts/Layout";
 const index = () => {
 	return (
 		<Layout>
-			<div className="grid-layout">
+			<div className="grid-layout max-w-384 mx-auto">
 				<Hero/>
 				<Skills/>
 			</div>

@@ -12,4 +12,13 @@
     .grid-layout {
         @apply mx-5 grid gap-5 grid-cols-4 md:grid-cols-8 lg:grid-cols-12
     }
+
+    /* ------------ WIDTH STYLES --------------*/
+	.w-384 {
+		width: 1536px !important;
+	}
+
+	.max-w-384 {
+		max-width: 1536px !important;
+	}
 }
