@@ -7,8 +7,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: hello-home-page
-    container_name: hello-home-page
+    image: baquerizogo-personal-page
+    container_name: baquerizogo-personal-page
     volumes:
       - /usr/src/app/node_modules
       - /usr/src/app/.next
