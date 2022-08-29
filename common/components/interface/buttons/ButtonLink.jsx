@@ -14,7 +14,7 @@ const ButtonLink = ({children, color, className, onClick, disabled, href}) => {
     return (
         <Link href={href || '#'}>
             <a
-                className={`rounded-xl py-2 px-4 transition-all duration-200 ${config[color || 'default']} ${className || ''}`} 
+                className={`rounded-xl py-2 px-4 transition-all duration-200 select-none ${config[color || 'default']} ${className || ''} ${disabled ? 'pointer-events-none opacity-50' : ''}`} 
                 onClick={onClick || null} 
                 disabled={disabled || false}
             >

@@ -10,7 +10,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div>
-                    <ButtonLink color="primary" className="font-bold" href="#">Contact me</ButtonLink>
+                    <ButtonLink color="primary" className="font-bold" href="#" disabled>Contact me</ButtonLink>
                 </div>
             </nav>
         </header>
