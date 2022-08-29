@@ -51,7 +51,7 @@ module.exports = {
                 
                 
                 lowContrast: "#EDDFB3",
-                background: "#FEFFEB",
+                background: "#F9FAED",
                 auxiliary: "#CA955C",
             },
             transitionDelay: {
