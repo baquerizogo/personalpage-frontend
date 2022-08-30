@@ -6,8 +6,8 @@ const Footer = () => {
     const year = date.getFullYear();
 
     return (
-        <footer className="xl:grid-layout">
-            <div className="mx-5 py-5 md:flex md:justify-between xl:col-start-2 xl:col-end-12">
+        <footer className="lg:grid-layout">
+            <div className="mx-5 lg:mx-0 py-5 md:flex md:justify-between lg:col-start-2 lg:col-end-12">
                 <div>
                     <p>Find me as <span className="font-bold">@Baquerizogo</span> on any social network!</p>
                     <div className="flex flex-col md:flex-row md:space-x-8 mt-2">
