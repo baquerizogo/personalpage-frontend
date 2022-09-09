@@ -62,6 +62,9 @@ module.exports = {
                 '0': '0ms',
                 '50': '50ms',
             },
+            backgroundImage: {
+                'landscape': "url('/images/landscape.png')",
+            },
         },
     },
     plugins: [
