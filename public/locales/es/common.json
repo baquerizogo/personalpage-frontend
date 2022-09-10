@@ -1,0 +1,21 @@
+{
+    "username": "@Baquerizogo",
+    "navbar": {
+        "contact-button-text": "Contacto"
+    },
+    "footer": {
+        "find-me-text": {
+            "first": "¡Encuéntrame como",
+            "username" : "@Baquerizogo",
+            "last": "en cualquier red social!"
+        },
+        "hire-hello-text": {
+            "first": "Contrátanos en",
+            "last": "he-llo"
+        },
+        "copyright-text": {
+            "first": "Todos los derechos reservados ©",
+            "last": "baquerizogo"
+        }
+    }
+}

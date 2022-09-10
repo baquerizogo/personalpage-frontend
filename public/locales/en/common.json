@@ -1,0 +1,22 @@
+{
+    "username": "@Baquerizogo",
+    "navbar": {
+        "contact-button-text": "Contact me"
+    },
+    "footer": {
+        "find-me-text": {
+            "first": "Find me as",
+            "username" : "@Baquerizogo",
+            "last": "on any social network!"
+        },
+        "hire-hello-text": {
+            "first": "Hire us at",
+            "last": "he-llo"
+        },
+        "copyright-text": {
+            "first": "Copyright ©",
+            "last": "baquerizogo"
+        }
+        
+    }
+}

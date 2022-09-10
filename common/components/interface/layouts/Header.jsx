@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from 'next-i18next';
 import ButtonLink from "../buttons/ButtonLink";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 const Header = () => {
+    const { t } = useTranslation("");
+
     const [scrollY, setScrollY] = useState(0); //Get scroll position
     
     useEffect(() => {
@@ -25,13 +29,14 @@ const Header = () => {
                         relative py-2 bg-background/50 backdrop-blur-md flex justify-between items-center rounded-b-lg col-span-full lg:col-start-2 lg:col-end-12
                     `}
                 >
-                    <div>
+                    <div className="">
                         <div className="rounded-full w-12">
                             <img src="/images/profile.png" alt="Jose Baquerizo picture" className="rounded-full"/>
                         </div>
                     </div>
-                    <div>
-                        <ButtonLink color="primary" className="font-bold" href="#" disabled>Contact me</ButtonLink>
+                    <div className="flex items-center space-x-4">
+                        <LocaleSwitcher/>
+                        <ButtonLink color="primary" className="font-bold" href="#" disabled>{t("navbar.contact-button-text")}</ButtonLink>
                     </div>
                 </nav>
             </div>
