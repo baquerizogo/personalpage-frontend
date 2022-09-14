@@ -3,15 +3,16 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'next-i18next';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faExternalLink, faHamburger } from "@fortawesome/free-solid-svg-icons";
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
 import ButtonLink from "../buttons/ButtonLink";
 import LocaleSwitcher from "./LocaleSwitcher";
 
-import { MenuItems } from "@/utils/MenuItems";
+import MenuItems from "@/utils/MenuItems";
 import NavBarToggle from "./NavbarToggle";
 
 const Header = () => {
+    const menu = MenuItems();
     const { t } = useTranslation("");
     const router = useRouter();
 
@@ -53,9 +54,9 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className="hidden grow md:flex justify-end items-center space-x-8 mx-8">
-                                {MenuItems.map((e) => (
-                                    <Link href={e.path} passHref={e.external}>
-                                        <a className={`flex items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`}>
+                                {menu.map((e, index) => (
+                                    <Link key={index} href={e.path} passHref={e.external}>
+                                        <a className={`flex items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`} target={e.external ? 'blank' : ''}>
                                             <span>{e.name}</span>
                                             { e.external ? <FontAwesomeIcon icon={faExternalLink} size="xs" className="mt-0.5"/> : null }
                                         </a>
@@ -68,9 +69,9 @@ const Header = () => {
                             </div>
                         </div>
                         <div className={`md:hidden flex justify-around my-4 transition-all ${!collapsed ? '-translate-y-4 -mb-10 opacity-0' : ''}`}>
-                            {MenuItems.map((e) => (
-                                <Link href={e.path} passHref={e.external}>
-                                    <a className={`flex items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`}>
+                            {menu.map((e, index) => (
+                                <Link key={index} href={e.path} passHref={e.external}>
+                                    <a className={`flex items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`} target={e.external ? 'blank' : ''}>
                                         <span>{e.name}</span>
                                         { e.external ? <FontAwesomeIcon icon={faExternalLink} size="xs" className="mt-0.5"/> : null }
                                     </a>

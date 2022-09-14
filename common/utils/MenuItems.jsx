@@ -1,24 +1,32 @@
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from 'next-i18next';
 
-export const MenuItems = [
-    {
-        name: 'Home',
-        path: '/',
-        external: false
-    },
-    {
-        name: 'About me',
-        path: '/about',
-        external: false
-    },
-    {
-        name: 'Portfolio',
-        path: '/portfolio',
-        external: false
-    },
-    {
-        name: 'Resume',
-        path: 'https://www.google.com/',
-        external: true
-    },
-];
+const MenuItems = () => {
+    const { t } = useTranslation("");
+
+    return (
+        [
+            {
+                name: t("navbar.home-text"),
+                path: '/',
+                external: false
+            },
+            {
+                name: t("navbar.about-me-text"),
+                path: '/about',
+                external: false
+            },
+            {
+                name: t("navbar.portfolio-text"),
+                path: '/portfolio',
+                external: false
+            },
+            {
+                name: t("navbar.resume-text"),
+                path: t("navbar.resume-url"),
+                external: true
+            },
+        ]
+    );
+}
+ 
+export default MenuItems;

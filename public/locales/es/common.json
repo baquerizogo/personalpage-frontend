@@ -1,7 +1,12 @@
 {
     "username": "@Baquerizogo",
     "navbar": {
-        "contact-button-text": "Contacto"
+        "contact-button-text": "Contáctame",
+        "home-text": "Inicio",
+        "about-me-text": "Sobre mi",
+        "portfolio-text": "Portfolio",
+        "resume-text": "Currículum",
+        "resume-url": "https://drive.google.com/file/d/1lgt-TaOjus8AzRflE6yE10ISpo3fuM9L/view?usp=sharing"
     },
     "footer": {
         "find-me-text": {
