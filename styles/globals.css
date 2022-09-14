@@ -13,6 +13,34 @@
         @apply px-5 grid gap-5 grid-cols-4 md:grid-cols-8 lg:grid-cols-12
     }
 
+	/* ------------ ANIMATION ------------------*/
+	.link-animated {
+		@apply inline-block relative
+	}
+
+	.link-animated::after {
+		@apply bg-primary-500 absolute w-full h-0.5 bottom-0 left-0;
+		transform: scaleX(0);
+		content: '';
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-out;
+	}
+
+	.link-animated:hover::after {
+		transform: scaleX(1);
+  		transform-origin: bottom left;
+	}
+
+	.navbar-button-animated span:first-child {
+		@apply -mt-0.5;
+		transform: rotate(45deg);
+	}
+
+	.navbar-button-animated span:last-child {
+		@apply -mt-0.5;
+		transform: rotate(-45deg);
+	}
+
     /* ------------ WIDTH STYLES --------------*/
 	.w-384 {
 		width: 1536px !important;
