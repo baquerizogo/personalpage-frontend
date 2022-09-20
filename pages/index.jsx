@@ -6,11 +6,11 @@ import Layout from "@/layouts/Layout";
 
 export async function getStaticProps({ locale }) {
 	return {
-	  props: {
-		...(await serverSideTranslations(locale, ["common", "home"])),
-	  },
+		props: {
+			...(await serverSideTranslations(locale, ["common", "home"])),
+		},
 	};
-  }
+}
 
 const index = () => {
 	return (

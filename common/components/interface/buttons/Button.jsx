@@ -22,6 +22,7 @@ const Button = ({ children, color, type, size, className, onClick, disabled}) =>
         xs: 'rounded-lg py-1 px-3 text-sm whitespace-nowrap',
         sm: 'rounded-lg py-1 px-2',
         md: 'rounded-xl py-2 px-6',
+        lg: 'rounded-xl py-3 px-8 text-lg',
         onlyIcon: 'rounded-md py-1 px-3 xl:px-2 xl:py-0'
     }
 

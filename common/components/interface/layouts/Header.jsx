@@ -40,7 +40,7 @@ const Header = () => {
             <div className="fixed top-0 left-0 z-30 right-0 flex justify-center">
                 <div className={`w-full max-w-384 grid-layout ${scrollY > 30 ? '!px-0' : '!px-0'}`}>
                     <nav 
-                        className={`${scrollY > 30 || collapsed ? 'shadow-md shadow-black/5 border-b border-b-white/50' : ''}
+                        className={`${scrollY > 30 || collapsed ? 'shadow-sm border-b border-b-white/50' : ''}
                          px-5 lg:px-4 relative py-2 bg-white/50 backdrop-blur-lg rounded-b-lg col-span-full lg:col-start-2 lg:col-end-12
                         `}
                     >
