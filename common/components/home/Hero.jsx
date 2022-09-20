@@ -6,8 +6,8 @@ const Hero = () => {
     return (
         <>
             <div className="col-span-full md:col-span-5 lg:col-start-2 lg:col-end-9">
-                <span className="block text-4xl my-4">💻☕</span>
-                <h1 className="text-2xl xl:text-4xl font-bold text-secondary-600">{t("hero.title", {ns: 'home'})}</h1>
+                <span className="block text-4xl my-4">🔥☕</span>
+                <h1 className="text-2xl xl:text-4xl font-bold">{t("hero.title", {ns: 'home'})}</h1>
                 <h2 className="text-2xl xl:text-4xl">{t("hero.subtitle", {ns: 'home'})} <span className="font-bold whitespace-nowrap">he-llo</span>.</h2>
                 <p className="my-4 text-lg">{t("hero.description", {ns: 'home'})}</p>
             </div>

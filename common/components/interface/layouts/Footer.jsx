@@ -19,19 +19,19 @@ const Footer = () => {
                 <div>
                     <p>{t("footer.find-me-text.first")} <span className="font-bold">@Baquerizogo</span> {t("footer.find-me-text.last")}</p>
                     <div className="flex flex-col md:flex-row md:space-x-8 mt-2">
-                        <a href="https://www.instagram.com/baquerizogo/" target="blank" className="space-x-1">
+                        <a href="https://www.instagram.com/baquerizogo/" target="blank" className="space-x-1 link-animated">
                             <FontAwesomeIcon icon={faInstagram}/>
                             <span>Instagram</span>
                         </a>
-                        <a href="https://twitter.com/baquerizogo" target="blank" className="space-x-1">
+                        <a href="https://twitter.com/baquerizogo" target="blank" className="space-x-1 link-animated">
                             <FontAwesomeIcon icon={faTwitter}/>
                             <span>Twitter</span>
                         </a>
-                        <a href="https://github.com/baquerizogo" target="blank" className="space-x-1">
+                        <a href="https://github.com/baquerizogo" target="blank" className="space-x-1 link-animated">
                             <FontAwesomeIcon icon={faGithub}/>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/baquerizogo" target="blank" className="space-x-1">
+                        <a href="https://www.linkedin.com/in/baquerizogo" target="blank" className="space-x-1 link-animated">
                             <FontAwesomeIcon icon={faLinkedinIn}/>
                             <span>LinkedIn</span>
                         </a>

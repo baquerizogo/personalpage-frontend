@@ -13,6 +13,17 @@
         @apply px-5 grid gap-5 grid-cols-4 md:grid-cols-8 lg:grid-cols-12
     }
 
+	.bg-dot-grid {
+		@apply relative;
+	}
+
+	.bg-dot-grid::after {
+		@apply block absolute left-0 top-0 w-full h-full opacity-[0.15] -z-10;
+		content: ' ';
+		background-image: radial-gradient(black 1px, transparent 0);
+		background-size: 20px 20px;
+	}
+
 	/* ------------ ANIMATION ------------------*/
 	.link-animated {
 		@apply inline-block relative
