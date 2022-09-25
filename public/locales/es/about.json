@@ -1,0 +1,18 @@
+{
+    "description": {
+        "title": "Sobre mi",
+        "p-first": "Soy ingeniero en Tecnologías de la información. Me especializo en desarrollo web y diseño UX/UI. Soy el co-fundador de he-llo, ayudamos a emprendedores y compañías a volver realidad sus proyectos con tecnología. Estoy involucrado en la creación de productos web para digitalizar las finanzas y procesos en pequeños y medianos negocios en la localidad, otorgándoles un soporte extra para que compitan como las grandes compañías.",
+        "p-second": "Implementando Lean UX, diseño UI, mi background académico, frameworks y tecnologías como NextJS, algoritmos de optimización e investigación de operaciones, ayudo a crear estas soluciones que satisfacen las necesidades de los usuarios.",
+        "p-quote": "¡Estoy constantementa aprendiendo algo nuevo y esperando colaborar en tus proyectos!"
+    },
+    "skills": {
+        "title": "Habilidades",
+        "p-first": "Me apasiona crear productos y resolver problemas con JavaScript, React y mucho más; haciendo que luzcan grandiosos y siempre enfocándome en las mejores prácticas y la experiencia del usuario.",
+        "p-second": "Seleccione para ver detalles:",
+        "list": {
+            "chess": "Ajedrez",
+            "videogames": "Videojuegos",
+            "swimming": "Natación"
+        }
+    }
+}
