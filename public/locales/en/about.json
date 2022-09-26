@@ -3,7 +3,8 @@
         "title": "About me",
         "p-first": "I'm an Information Technology engineer. I specialize in web development and UX/UI design. I'm co-founder of he-llo, where we help entrepreneurs and companies to make their projects a reality. I am also involved in the creation of web apps for the digitization of finances, processes and inventories in small and medium local businesses, giving them an extra support to compete like the big companies!",
         "p-second": "Implementing Lean UX, UI design, my academic background, web development, frameworks like NextJS, optimization algorithms and even operations research, I help to create these solutions that meet the needs of the customer.",
-        "p-quote": "I'm constantly learning something new and willing to collaborate on projects with you!"
+        "p-quote": "I'm constantly learning something new and willing to collaborate on projects with you!",
+        "scroll-text": "Scroll down"
     },
     "skills": {
         "title": "Skills",

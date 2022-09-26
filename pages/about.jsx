@@ -16,7 +16,7 @@ export async function getStaticProps({ locale }) {
 const about = () => {
 	return (
 		<Layout>
-			<div className="grid-layout">
+			<div className="grid-layout lg:h-[72vh]">
                 <ProfileInfo/>
                 <Description/>
 			</div>

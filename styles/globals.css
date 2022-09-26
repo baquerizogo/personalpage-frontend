@@ -8,6 +8,29 @@
 	}
 }
 
+@layer utilities {
+	/* width */
+	::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #6B7280aa;
+		border-radius: 100vh;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #6B7280;
+	}
+}
+
 @layer components {
     .grid-layout {
         @apply px-5 grid gap-5 grid-cols-4 md:grid-cols-8 lg:grid-cols-12

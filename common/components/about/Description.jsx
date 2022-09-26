@@ -15,25 +15,31 @@ import {
 
 import { 
     faChessKnight, 
+    faChevronDown, 
     faDatabase, 
     faGamepad, 
     faSwimmer 
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Description = () => {
     const { t } = useTranslation("");
 
     return (
-        <div className="col-span-full space-y-8 mb-8 lg:mt-8 lg:col-start-2 lg:col-end-7 lg:row-start-1">
-            <div>
+        <div className="lg:snap-mandatory lg:snap-y lg:overflow-scroll lg:pr-4 col-span-full mb-8 lg:mt-4 lg:col-start-2 lg:col-end-7 lg:row-start-1">
+            <div className="lg:snap-center lg:h-full">
                 <h1 className="text-2xl font-bold">{t("description.title", {ns: 'about'})} ☕</h1>
                 <div className="space-y-4">
                     <p>{t("description.p-first", {ns: 'about'})}</p>
                     <p>{t("description.p-second", {ns: 'about'})}</p>
                     <p className="italic">&gt; {t("description.p-quote", {ns: 'about'})}</p>
+                    <div className="text-center animate-bounce flex flex-col text-secondary-500">
+                        <span className="text-xs font-bold">{t("description.scroll-text", {ns: 'about'})}</span>
+                        <FontAwesomeIcon icon={faChevronDown} size="sm"/>
+                    </div>
                 </div>
             </div>
-            <div>
+            <div className="lg:snap-center lg:h-full">
                 <h2 className="text-2xl font-bold">{t("skills.title", {ns: 'about'})} 🧨</h2>
                 <div className="space-y-4">
                     <p>

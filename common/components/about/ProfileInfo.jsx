@@ -3,12 +3,12 @@ import { faGraduationCap, faMapLocationDot, faTreeCity } from '@fortawesome/free
 
 const ProfileInfo = () => {
     return (
-        <div className="col-span-full lg:mt-8 lg:col-start-8 lg:col-end-12">
+        <div className="col-span-full lg:mt-4 lg:col-start-8 lg:col-end-12">
             <div>
                 <div className="bg-[url('/images/salinas.png')] h-52 md:h-72 lg:h-40 xl:h-52 rounded-3xl bg-cover bg-top xl:bg-center">
                 </div>
                 <div className='w-2/5 mx-auto -mt-28 md:-mt-52 lg:-mt-24 xl:-mt-32 lg:mr-8 rounded-3xl'>
-                    <img src="/images/profile.png" alt="" className='rounded-3xl'/>
+                    <img src="/images/profile.png" alt="Foto de perfil de José Baquerizo" className='rounded-3xl'/>
                 </div>
             </div>
             <div className="my-4 space-y-4">
