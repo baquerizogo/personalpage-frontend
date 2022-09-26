@@ -55,7 +55,7 @@ const Header = () => {
                             </div>
                             <div className="hidden grow md:flex justify-end items-center space-x-8 mx-8">
                                 {menu.map((e, index) => (
-                                    <Link key={index} href={e.path} passHref={e.external}>
+                                    <Link key={index} href={e.path} passHref={e.external} scroll={false}>
                                         <a className={`flex items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`} target={e.external ? 'blank' : ''}>
                                             <span>{e.name}</span>
                                             { e.external ? <FontAwesomeIcon icon={faExternalLink} size="xs" className="mt-0.5"/> : null }
@@ -70,7 +70,7 @@ const Header = () => {
                         </div>
                         <div className={`md:hidden flex justify-around my-4 transition-all ${!collapsed ? '-translate-y-4 -mb-10 opacity-0' : ''}`}>
                             {menu.map((e, index) => (
-                                <Link key={index} href={e.path} passHref={e.external}>
+                                <Link key={index} href={e.path} passHref={e.external} scroll={false}>
                                     <a className={`flex items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`} target={e.external ? 'blank' : ''}>
                                         <span>{e.name}</span>
                                         { e.external ? <FontAwesomeIcon icon={faExternalLink} size="xs" className="mt-0.5"/> : null }

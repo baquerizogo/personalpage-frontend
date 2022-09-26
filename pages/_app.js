@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Head from 'next/head';
 
+import { AnimatePresence } from "framer-motion";
 import { appWithTranslation } from 'next-i18next';
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
@@ -18,7 +19,13 @@ function MyApp({ Component, pageProps }) {
 
 				<link rel="shortcut icon" href="/favicon.png" />
 			</Head>
-			<Component {...pageProps} />
+			<AnimatePresence
+				exitBeforeEnter
+				initial={false}
+				onExitComplete={() => window.scrollTo(0,0)}
+			>
+				<Component {...pageProps} />
+			</AnimatePresence>
 		</>
 	)
 }
