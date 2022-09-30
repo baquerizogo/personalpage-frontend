@@ -12,7 +12,7 @@ export async function getStaticProps({ locale }) {
 	};
 }
 
-const index = () => {
+const Index = () => {
 	return (
 		<Layout>
 			<div className="grid-layout">
@@ -23,4 +23,4 @@ const index = () => {
 	);
 }
  
-export default index;
+export default Index;

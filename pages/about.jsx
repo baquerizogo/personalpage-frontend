@@ -13,7 +13,7 @@ export async function getStaticProps({ locale }) {
 }
 
 
-const about = () => {
+const About = () => {
 	return (
 		<Layout>
 			<div className="grid-layout lg:h-[72vh]">
@@ -24,4 +24,4 @@ const about = () => {
 	);
 }
  
-export default about;
+export default About;
