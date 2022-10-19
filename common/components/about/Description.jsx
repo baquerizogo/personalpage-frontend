@@ -26,7 +26,7 @@ const Description = () => {
     const { t } = useTranslation("");
 
     return (
-        <div className="lg:snap-mandatory lg:snap-y lg:overflow-scroll lg:pr-4 col-span-full mb-8 lg:mt-4 lg:col-start-2 lg:col-end-7 lg:row-start-1">
+        <div className="lg:snap-mandatory lg:snap-y lg:overflow-scroll lg:overflow-x-hidden lg:pr-4 col-span-full mb-8 lg:mt-4 lg:col-start-2 lg:col-end-7 lg:row-start-1">
             <div className="lg:snap-center lg:h-full">
                 <h1 className="text-2xl font-bold">{t("description.title", {ns: 'about'})} ☕</h1>
                 <div className="space-y-4">

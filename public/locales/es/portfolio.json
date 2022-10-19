@@ -1,0 +1,102 @@
+{
+    "0": {
+        "title": "Samara. La solución en la nube para el control de negocios de todos los tamaños",
+        "summary": "Samara es una aplicación web basada en la nube como un SaaS (Software as a service) para empresas de todo tamaño. Con esta solución pueden automatizar sus finanzas, procesos de compra-venta y gestión de inventarios; sin necesitar una compleja arquitectura tecnológica. Simplemente un dispositivocon acceso a internet para acceder a todos los beneficios de Samara.",
+        "link": {
+            "text": "Ir al proyecto"
+        },
+        "keys": {
+            "status": "En progreso",
+            "role": "desarrollador Front-end, diseñador UI/UX",
+            "company": {
+                "name": "he-llo"
+            }
+        },
+        "details": {
+            "p1": "Esta aplicación fue creada desde 0. Fue diseñada y prototipada usando Figma y los principios Mobile-first. Luego fue desarrollada y desplegada usando NextJS con ContextAPI para el manejo del estado y Tailwind para las interfaces. Est aplicación también usa una API de primera mano para conectarse con el back-end y otros servicios proporcionados por el equipo de desarrolladores he-llo.",
+            "p2": "Impacto: Muy alto.",
+            "p3": "Habilidades: Resolución de problemas, trabajo en equipo, UX research, Gestión de proyectos."
+
+        },
+        "features": {
+            "0": { 
+                "responsive": "Aplicación responsive", 
+                "cloud": "Basado en la nube",
+                "multi-user": "Multiples usuarios", 
+                "multi-branch": "Multiples sucursales"
+            },
+            "1": {
+                "roles": "Administración de roles", 
+                "inventory": "Administración de inventarios",
+                "sales": "Generación de ventas y facturas",
+                "stats": "Estadísticas"
+            },
+            "2": {
+                "products": "Administración de productos", 
+                "orders": "Administración de ingresos y gastos", 
+                "kardex": "Generación de kardex",
+                "customer": "Administración de clientes"
+            }
+        }
+    },
+    "1": {
+        "title": "Aplicación para la automatización de horarios de clases",
+        "summary": "Esta aplicación fue desarrollada para una escuela específica para automatizar la generación de horarios de clases y solucionar problemas de distribución horaria para los profesores en base a determinadas restricciones usando Investigación de operaciones y procesos de optimización con algorítmos de Programación Lineal entera.",
+        "link": {
+            "text": "Ir al repositorio"
+        },
+        "keys": {
+            "status": "Desplegado",
+            "role": "Desarrollador Full-stack, diseñador UI/UX",
+            "company": {
+                "name": "Escuela Angélica Villón L."
+            }
+        },
+        "details": {
+            "p1": "Esta aplicación fue basada en componentes bootstrap. El proyecto inicia con la necesidad de esta escuela para solucionar conflictos de distribución horaria para los docentes, entre periodos, clases, asignaturas y cursos. Se optimizó este proceso implementando algoritmos de optimización con Programación Linear Entera e Investigación de Operaciones.",
+            "p2": "Impacto: Total",
+            "p3": "Habilidades: Resolución de problemas, gestión de proyectos, Investigación de operaciones."
+
+        },
+        "features": {
+            "0": { 
+                "responsive": "Aplicación responsive", 
+                "automation": "Automatización de horarios",
+                "multi-user": "Multiples usuarios", 
+                "manual": "Creación de horarios manuales"
+            },
+            "1": {
+                "constraint": "Sensible a restricciones", 
+                "algorithm": "Optimización con programación lineal",
+                "teacher": "Administración de docentes",
+                "stats": "Estadísticas"
+            },
+            "2": {
+                "class": "Administración de clases", 
+                "course": "Administración de cursos",
+                "schedule": "Administración simultanea de horarios",
+                "export": "Horarios para docentes y estudiantes via PDF"
+            }
+        }
+    },
+    "2": {
+        "title": "he-llo Webpage",
+        "summary": "Página web para nuestra propia compañía de soluciones TI como Diseño Gráfico, Desarrollo web, Análisis de datos y más.",
+        "link": {
+            "text": "Ir a la página"
+        },
+        "keys": {
+            "status": "Desplegado",
+            "role": "Desarrollador Front-end, diseñador UI/UX",
+            "company": {
+                "name": "he-llo"
+            }
+        },
+        "details": {
+            "p1": "Esta página fue creada desde 0 usando Tailwind CSS, HTML, CSS, React y Next JS. El próposito de esta página está en ser optimizada para SEO y proveer diseño responsivo para los dispositivos de los visitantes.",
+            "p2": "Impacto: Muy alto.",
+            "p3": "Habilidades: Gestión de proyectos, trabajo en equipo, UX research."
+
+        }
+    }
+}

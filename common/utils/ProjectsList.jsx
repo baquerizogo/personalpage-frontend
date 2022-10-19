@@ -1,26 +1,28 @@
 import Tailwind from "@/interface/icons/Tailwind";
-import { faCss3Alt, faFigma, faGitAlt, faHtml5, faJs, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
-import { faCalendarDays, faChartSimple, faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { fab, faBootstrap, faCss3Alt, faFigma, faGitAlt, faHtml5, faJs, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faCalendarDays, faChartSimple, faDatabase, faHands } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from 'next-i18next';
 
 const ProjectsList = () => {
+    const { t } = useTranslation("");
 
     return ([
         {
             id: 0,
-            title: 'Samara. The SaaS solution to all-size businesses',
+            title: t("0.title", {ns: 'portfolio'}),
             projectIcon: faChartSimple,
             isPinned: true,
-            summary: 'Samara is a cloud-based web app provided as SaaS for all-size businesses to automatize their finances, processes and inventories without needing complex technological architecture. Just a device and internet access for enjoying all the benefits of Samara.',
+            summary: t("0.summary", {ns: 'portfolio'}),
             link: {
-                text: 'Go to project',
+                text: t("0.link.text", {ns: 'portfolio'}),
                 url: 'https://samara.frontend.hello4.one/',
             },
             keys: {
-                status: 'In progress',
+                status: t("0.keys.status", {ns: 'portfolio'}),
                 isBeta: true,
-                role: 'Front-end developer, UI/UX designer',
+                role: t("0.keys.role", {ns: 'portfolio'}),
                 company: {
-                    name: 'he-llo',
+                    name: t("0.keys.company.name", {ns: 'portfolio'}),
                     url: 'https://www.he-llo.com/'
                 }
             },
@@ -63,32 +65,47 @@ const ProjectsList = () => {
                 }
             ],
             details: {
-                p1: 'This app was created from scratch, the draft was made on Figma using the mobile-first principles. After it was developed and deployed using NextJS with Context API and TailwindCSS. This app also uses a first-party API to connect data and other services provided by the he-llo team.',
-                p2: 'In-project participation: Extremely high.',
-                p3: 'Skills: Trouble-shooting, UX research, teamwork, project management.'
+                p1: t("0.details.p1", {ns: 'portfolio'}),
+                p2: t("0.details.p2", {ns: 'portfolio'}),
+                p3: t("0.details.p3", {ns: 'portfolio'})
             },
             features: [
-                ['Responsive web app', 'Cloud-based', 'Multiple users', 'Multiple branches'],
-                ['Role management', 'Inventory management', 'Sales and Invoice generation', 'Statistics'],
-                ['Product management', 'Incomes and expenses management', 'Kardex generation', 'Customer management']
+                [
+                    t("0.features.0.responsive", {ns: 'portfolio'}),
+                    t("0.features.0.cloud", {ns: 'portfolio'}),
+                    t("0.features.0.multi-user", {ns: 'portfolio'}),
+                    t("0.features.0.multi-branch", {ns: 'portfolio'}),
+                ],
+                [
+                    t("0.features.1.roles", {ns: 'portfolio'}),
+                    t("0.features.1.inventory", {ns: 'portfolio'}),
+                    t("0.features.1.sales", {ns: 'portfolio'}),
+                    t("0.features.1.stats", {ns: 'portfolio'}),
+                ],
+                [
+                    t("0.features.2.products", {ns: 'portfolio'}),
+                    t("0.features.2.orders", {ns: 'portfolio'}),
+                    t("0.features.2.kardex", {ns: 'portfolio'}),
+                    t("0.features.2.customer", {ns: 'portfolio'}),
+                ],
             ]
         },
         {
             id: 1,
-            title: 'Class Schedules Automation app',
+            title: t("1.title", {ns: 'portfolio'}),
             projectIcon: faCalendarDays,
-            isPinned: true,
-            summary: 'Web app made for a specific school to automate class schedules and fix time distribution for teachers between classes using Operations Research and Process Optimization with Linear programming.',
+            isPinned: false,
+            summary: t("1.summary", {ns: 'portfolio'}),
             link: {
-                text: 'Go to repository',
+                text: t("1.link.text", {ns: 'portfolio'}),
                 url: 'https://github.com/baquerizogo/ScheduleClient',
             },
             keys: {
-                status: 'Deployed',
+                status: t("1.keys.status", {ns: 'portfolio'}),
                 isBeta: false,
-                role: 'Full-stack developer, UI/UX designer',
+                role: t("1.keys.role", {ns: 'portfolio'}),
                 company: {
-                    name: 'Angélica Villón L. School',
+                    name: t("1.keys.company.name", {ns: 'portfolio'}),
                 }
             },
             technologies: [
@@ -129,8 +146,8 @@ const ProjectsList = () => {
                     text: 'MongoDB'
                 },
                 {
-                    svg: Tailwind,
-                    text: 'Tailwind CSS'
+                    icon: faBootstrap,
+                    text: 'Bootstrap'
                 },
                 {
                     abbr: 'Ps',
@@ -142,32 +159,47 @@ const ProjectsList = () => {
                 }
             ],
             details: {
-                p1: 'This app was created from scratch, the draft was made on Figma using the mobile-first principles. After it was developed and deployed using NextJS with Context API and TailwindCSS. This app also uses a first-party API to connect data and other services provided by the he-llo team.',
-                p2: 'In-project participation: Extremely high.',
-                p3: 'Skills: Trouble-shooting, UX research, teamwork, project management.'
+                p1: t("1.details.p1", {ns: 'portfolio'}),
+                p2: t("1.details.p2", {ns: 'portfolio'}),
+                p3: t("1.details.p3", {ns: 'portfolio'})
             },
             features: [
-                ['Responsive web app', 'Cloud-based', 'Multiple users', 'Multiple branches'],
-                ['Role management', 'Inventory management', 'Sales and Invoice generation', 'Statistics'],
-                ['Product management', 'Incomes and expenses management', 'Kardex generation', 'Customer management']
+                [
+                    t("1.features.0.responsive", {ns: 'portfolio'}),
+                    t("1.features.0.automation", {ns: 'portfolio'}),
+                    t("1.features.0.multi-user", {ns: 'portfolio'}),
+                    t("1.features.0.manual", {ns: 'portfolio'}),
+                ],
+                [
+                    t("1.features.1.constraint", {ns: 'portfolio'}),
+                    t("1.features.1.algorithm", {ns: 'portfolio'}),
+                    t("1.features.1.teacher", {ns: 'portfolio'}),
+                    t("1.features.1.stats", {ns: 'portfolio'}),
+                ],
+                [
+                    t("1.features.2.class", {ns: 'portfolio'}),
+                    t("1.features.2.course", {ns: 'portfolio'}),
+                    t("1.features.2.schedule", {ns: 'portfolio'}),
+                    t("1.features.2.export", {ns: 'portfolio'}),
+                ],
             ]
         },
         {
             id: 3,
-            title: 'he-llo Webpage',
-            projectIcon: faCalendarDays,
-            isPinned: true,
-            summary: 'Web app made for a specific school to automate class schedules and fix time distribution for teachers between classes using Operations Research and Process Optimization with Linear programming.',
+            title: t("2.title", {ns: 'portfolio'}),
+            projectIcon: faHands,
+            isPinned: false,
+            summary: t("2.summary", {ns: 'portfolio'}),
             link: {
-                text: 'Go to repository',
+                text: t("2.link.text", {ns: 'portfolio'}),
                 url: 'https://github.com/baquerizogo/ScheduleClient',
             },
             keys: {
-                status: 'Deployed',
+                status: t("2.keys.status", {ns: 'portfolio'}),
                 isBeta: false,
-                role: 'Full-stack developer, UI/UX designer',
+                role: t("2.keys.role", {ns: 'portfolio'}),
                 company: {
-                    name: 'Angélica Villón L. School',
+                    name: t("2.keys.company.name", {ns: 'portfolio'}),
                 }
             },
             technologies: [
@@ -208,7 +240,7 @@ const ProjectsList = () => {
                     text: 'MongoDB'
                 },
                 {
-                    svg: Tailwind,
+                    abbr: 'Ts',
                     text: 'Tailwind CSS'
                 },
                 {
@@ -221,15 +253,10 @@ const ProjectsList = () => {
                 }
             ],
             details: {
-                p1: 'This app was created from scratch, the draft was made on Figma using the mobile-first principles. After it was developed and deployed using NextJS with Context API and TailwindCSS. This app also uses a first-party API to connect data and other services provided by the he-llo team.',
-                p2: 'In-project participation: Extremely high.',
-                p3: 'Skills: Trouble-shooting, UX research, teamwork, project management.'
-            },
-            features: [
-                ['Responsive web app', 'Cloud-based', 'Multiple users', 'Multiple branches'],
-                ['Role management', 'Inventory management', 'Sales and Invoice generation', 'Statistics'],
-                ['Product management', 'Incomes and expenses management', 'Kardex generation', 'Customer management']
-            ]
+                p1: t("2.details.p1", {ns: 'portfolio'}),
+                p2: t("2.details.p2", {ns: 'portfolio'}),
+                p3: t("2.details.p3", {ns: 'portfolio'})
+            }
         }
     ]);
 }
