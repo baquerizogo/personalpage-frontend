@@ -58,8 +58,8 @@ const Project = ({ project }) => {
                 </div>
             </div>
             <div className="col-span-full md:col-span-1">
-                <div className="w-full h-44 bg-gray-100 rounded-md">
-
+                <div className={`w-full h-44 bg-gray-100 rounded-md`}>
+                    <img src={project.imageUrl} alt="" className="w-full h-full object-cover rounded-md"/>
                 </div>
                 <div className="flex mt-2 flex-wrap text-secondary-600">
                     {

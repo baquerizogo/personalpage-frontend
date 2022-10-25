@@ -13,6 +13,8 @@ const ProjectsList = () => {
             projectIcon: faChartSimple,
             isPinned: true,
             summary: t("0.summary", {ns: 'portfolio'}),
+            imageUrl: "/images/portfolio/samara.png",
+            imageAlt: "Samara project preview",
             link: {
                 text: t("0.link.text", {ns: 'portfolio'}),
                 url: 'https://samara.frontend.hello4.one/',
@@ -96,6 +98,8 @@ const ProjectsList = () => {
             projectIcon: faCalendarDays,
             isPinned: false,
             summary: t("1.summary", {ns: 'portfolio'}),
+            imageUrl: "/images/portfolio/schedules.png",
+            imageAlt: "Schedule manager project preview",            
             link: {
                 text: t("1.link.text", {ns: 'portfolio'}),
                 url: 'https://github.com/baquerizogo/ScheduleClient',
@@ -190,6 +194,8 @@ const ProjectsList = () => {
             projectIcon: faHands,
             isPinned: false,
             summary: t("2.summary", {ns: 'portfolio'}),
+            imageUrl: "/images/portfolio/hellopage.png",
+            imageAlt: "He-llo page project preview",
             link: {
                 text: t("2.link.text", {ns: 'portfolio'}),
                 url: 'https://github.com/baquerizogo/ScheduleClient',
