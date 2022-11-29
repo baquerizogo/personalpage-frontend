@@ -1,5 +1,4 @@
-import Tailwind from "@/interface/icons/Tailwind";
-import { fab, faBootstrap, faCss3Alt, faFigma, faGitAlt, faHtml5, faJs, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap, faCss3Alt, faFigma, faGitAlt, faHtml5, faJs, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
 import { faCalendarDays, faChartSimple, faDatabase, faHands } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from 'next-i18next';
 
@@ -198,7 +197,7 @@ const ProjectsList = () => {
             imageAlt: "He-llo page project preview",
             link: {
                 text: t("2.link.text", {ns: 'portfolio'}),
-                url: 'https://github.com/baquerizogo/ScheduleClient',
+                url: 'https://www.he-llo.com/',
             },
             keys: {
                 status: t("2.keys.status", {ns: 'portfolio'}),

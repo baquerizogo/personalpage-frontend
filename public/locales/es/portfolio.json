@@ -1,4 +1,7 @@
 {
+    "portfolio-title": "Portafolio",
+    "project-info-title": "Información",
+    "project-features-title": "Características", 
     "0": {
         "title": "Samara. La solución en la nube para el control de negocios de todos los tamaños",
         "summary": "Samara es una aplicación web basada en la nube como un SaaS (Software as a service) para empresas de todo tamaño. Con esta solución pueden automatizar sus finanzas, procesos de compra-venta y gestión de inventarios; sin necesitar una compleja arquitectura tecnológica. Simplemente un dispositivocon acceso a internet para acceder a todos los beneficios de Samara.",

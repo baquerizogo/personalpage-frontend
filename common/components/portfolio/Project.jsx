@@ -1,15 +1,15 @@
-import Link from "next/link";
-
 import Badge from "@/interface/badges/Badge";
-import Tailwind from "@/interface/icons/Tailwind";
 import IconBadge from "@/interface/badges/IconBadge";
 
-import { faChevronLeft, faChevronRight, faChevronUp, faExternalLink, faHammer, faIndustry, faSuitcase, faThumbTack } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faExternalLink, faHammer, faIndustry, faSuitcase, faThumbTack } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
+import { useTranslation } from "next-i18next";
 
 const Project = ({ project }) => {
+    const { t } = useTranslation("");
+
     return (
         <div className="col-span-full lg:col-start-2 lg:col-end-12 grid grid-cols-2 gap-4 border border-gray-300 rounded-lg bg-white p-4">
             <div className="col-span-full md:col-span-1 space-y-2">
@@ -76,7 +76,7 @@ const Project = ({ project }) => {
                 {({ open }) => (
                     <div className="col-span-full">
                         <Disclosure.Button as="div" className="bg-primary-100 text-primary-700 font-bold flex items-center justify-between rounded-md py-2 px-4 select-none cursor-pointer">
-                            <h2>Project Info.</h2>
+                            <h2>{t("project-info-title", {ns: 'portfolio'})}</h2>
                             <FontAwesomeIcon icon={faChevronRight} size="sm" className={`transform transition-transform ${open ? '-rotate-90' : 'rotate-90'}`}/>
                         </Disclosure.Button>
                         <Transition
@@ -104,7 +104,7 @@ const Project = ({ project }) => {
                         {({ open }) => (
                             <div className="col-span-full">
                                 <Disclosure.Button as="div" className="bg-primary-100 text-primary-700 font-bold flex items-center justify-between rounded-md py-2 px-4 select-none cursor-pointer">
-                                    <h2>Features</h2>
+                                    <h2>{t("project-features-title", {ns: 'portfolio'})}</h2>
                                     <FontAwesomeIcon icon={faChevronRight} size="sm" className={`transform transition-transform ${open ? '-rotate-90' : 'rotate-90'}`}/>
                                 </Disclosure.Button>
                                 <Transition

@@ -1,4 +1,7 @@
 {
+    "portfolio-title": "Portfolio",
+    "project-info-title": "Project info.",
+    "project-features-title": "Features", 
     "0": {
         "title": "Samara. The SaaS solution to all-size businesses",
         "summary": "Samara is a cloud-based web app provided as SaaS for all-size businesses to automatize their finances, processes and inventories without needing complex technological architecture. Just a device and internet access for enjoying all the benefits of Samara.",
