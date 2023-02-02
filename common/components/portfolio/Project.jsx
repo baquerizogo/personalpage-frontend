@@ -17,27 +17,27 @@ const Project = ({ project }) => {
                     <h1 className="text-2xl font-bold">
                         {project?.title}
                         {project?.isPinned ? (
-                            <Badge type="primary" className="ml-2 inline whitespace-nowrap items-center space-x-1 -mb-1 px-3 py-1">
+                            <Badge type="primary" size="xs" className="ml-2 inline whitespace-nowrap items-center space-x-1 -mb-1 px-3 py-1">
                                 <FontAwesomeIcon icon={faThumbTack}/>
                                 <span>Pinned</span>
                             </Badge>
                         ): null}
                     </h1>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-4 text-slate-700">
                     <p>{project?.summary}</p>
                     <a href={project?.link.url} target="blank" className="link-animated space-x-2 text-primary-700">
                         <span>{project?.link.text}</span>
                         <FontAwesomeIcon icon={faExternalLink} size="sm"/>
                     </a>
                 </div>
-                <div>
+                <div className="text-sm text-slate-700">
                     <ul className="space-y-1">
                         <li className="space-x-3">
                             <FontAwesomeIcon icon={faHammer}/>
                             <span>{project?.keys.status}</span>
                             {project?.keys.isBeta ? (
-                                <Badge type="secondary" size="xs">Beta</Badge>
+                                <Badge type="primary" size="xs">Beta</Badge>
                             ) : null }
                         </li>
                         <li className="space-x-3">
@@ -75,7 +75,7 @@ const Project = ({ project }) => {
             <Disclosure as={Fragment}>
                 {({ open }) => (
                     <div className="col-span-full">
-                        <Disclosure.Button as="div" className="bg-primary-100 text-primary-700 font-bold flex items-center justify-between rounded-md py-2 px-4 select-none cursor-pointer">
+                        <Disclosure.Button as="div" className="bg-slate-200 text-slate-700 font-bold flex items-center justify-between rounded-md py-2 px-4 select-none cursor-pointer">
                             <h2>{t("project-info-title", {ns: 'portfolio'})}</h2>
                             <FontAwesomeIcon icon={faChevronRight} size="sm" className={`transform transition-transform ${open ? '-rotate-90' : 'rotate-90'}`}/>
                         </Disclosure.Button>
@@ -87,7 +87,7 @@ const Project = ({ project }) => {
                             leaveFrom="transform scale-100 opacity-100"
                             leaveTo="transform opacity-0"
                         >
-                            <Disclosure.Panel as="div" className="py-2 px-4">
+                            <Disclosure.Panel as="div" className="py-2 px-4 text-slate-700">
                                 <p>{project?.details?.p1}</p>
                                 <div className="mt-4">
                                     <p>{project?.details?.p2}</p>
@@ -103,7 +103,7 @@ const Project = ({ project }) => {
                     <Disclosure as={Fragment}>
                         {({ open }) => (
                             <div className="col-span-full">
-                                <Disclosure.Button as="div" className="bg-primary-100 text-primary-700 font-bold flex items-center justify-between rounded-md py-2 px-4 select-none cursor-pointer">
+                                <Disclosure.Button as="div" className="bg-slate-200 text-slate-700 font-bold flex items-center justify-between rounded-md py-2 px-4 select-none cursor-pointer">
                                     <h2>{t("project-features-title", {ns: 'portfolio'})}</h2>
                                     <FontAwesomeIcon icon={faChevronRight} size="sm" className={`transform transition-transform ${open ? '-rotate-90' : 'rotate-90'}`}/>
                                 </Disclosure.Button>
@@ -116,7 +116,7 @@ const Project = ({ project }) => {
                                     leaveTo="transform opacity-0"
                                 >
                                     <Disclosure.Panel as="div" className="col-span-full py-2 px-4">
-                                        <ul className="ml-4 list-disc md:flex md:justify-between">
+                                        <ul className="ml-4 list-disc md:flex md:justify-between text-slate-700">
                                             { project?.features?.length > 0 ? project.features.map((group, index) => (
                                                 <div key={index}>
                                                     {
