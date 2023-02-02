@@ -41,7 +41,7 @@ const Header = () => {
                 <div className={`w-full max-w-384 grid-layout ${scrollY > 30 ? '!px-0' : '!px-0'}`}>
                     <nav 
                         className={`${scrollY > 30 || collapsed ? 'shadow-sm border-b border-b-white/50' : ''}
-                         px-5 lg:px-4 relative py-2 bg-white/50 backdrop-blur-lg rounded-b-lg col-span-full lg:col-start-2 lg:col-end-12
+                         px-5 lg:px-4 relative py-2 bg-slate-50/50 text-slate-700 backdrop-blur-lg rounded-b-lg col-span-full lg:col-start-2 lg:col-end-12
                         `}
                     >
                         <div className="flex justify-between items-center">
@@ -56,8 +56,8 @@ const Header = () => {
                             <div className="hidden grow md:flex justify-end items-center space-x-8 mx-8">
                                 {menu.map((e, index) => (
                                     <Link key={index} href={e.path} passHref={e.external} scroll={false}>
-                                        <a className={`flex items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`} target={e.external ? 'blank' : ''}>
-                                            <span>{e.name}</span>
+                                        <a className={`flex text-sm items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`} target={e.external ? 'blank' : ''}>
+                                            <span className="font-medium">{e.name}</span>
                                             { e.external ? <FontAwesomeIcon icon={faExternalLink} size="xs" className="mt-0.5"/> : null }
                                         </a>
                                     </Link>
@@ -71,7 +71,7 @@ const Header = () => {
                         <div className={`md:hidden flex justify-around my-4 transition-all ${!collapsed ? '-translate-y-4 -mb-10 opacity-0' : ''}`}>
                             {menu.map((e, index) => (
                                 <Link key={index} href={e.path} passHref={e.external} scroll={false}>
-                                    <a className={`flex items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`} target={e.external ? 'blank' : ''}>
+                                    <a className={`flex font-medium items-center space-x-1 link-animated ${router.pathname == e.path ? 'text-primary-600 font-bold' : ''}`} target={e.external ? 'blank' : ''}>
                                         <span>{e.name}</span>
                                         { e.external ? <FontAwesomeIcon icon={faExternalLink} size="xs" className="mt-0.5"/> : null }
                                     </a>

@@ -23,17 +23,16 @@ const Skills = () => {
             <IconBadge abbr="Ts" text="TypeScript"/>
             <IconBadge icon={faReact} text="ReactJS"/>
             <IconBadge icon={faNodeJs} text="NodeJS"/>
-            <IconBadge abbr="Nx" text="NextJS"/>
             <IconBadge abbr="Ex" text="ExpressJS"/>
-            <IconBadge icon={faVial} text="Jest"/>
+            <IconBadge abbr="Nx" text="NextJS"/>
             <IconBadge icon={faGitAlt} text="Git/GitHub"/>
             <IconBadge svg={Tailwind} text="Tailwind CSS" className="fill-slate-700"/>
             <IconBadge icon={faBootstrap} text="Bootstrap"/>
             <IconBadge icon={faDatabase} text="MongoDB"/>
+            <IconBadge icon={faVial} text="Jest"/>
             <IconBadge abbr="Ai" text="Adobe Ilustrator"/>
             <IconBadge abbr="Ps" text="Adobe Photoshop"/>
             <IconBadge icon={faFigma} text="Figma"/>
-            <IconBadge abbr="B1" text="English"/>
         </div>
     );
 }

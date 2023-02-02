@@ -14,7 +14,7 @@ const Footer = () => {
     const year = date.getFullYear();
 
     return (
-        <footer className="lg:grid-layout">
+        <footer className="lg:grid-layout text-sm font-medium text-slate-700">
             <div className="mx-5 lg:mx-0 py-5 md:flex md:justify-between lg:col-start-2 lg:col-end-12">
                 <div>
                     <p>{t("footer.find-me-text.first")} <span className="font-bold">@Baquerizogo</span> {t("footer.find-me-text.last")}</p>

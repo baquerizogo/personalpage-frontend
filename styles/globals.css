@@ -47,6 +47,34 @@
 		background-size: 20px 20px;
 	}
 
+	.home-bg-sm {
+		@apply relative overflow-hidden;
+	}
+
+	.home-bg-sm::before {
+		@apply absolute -z-10 w-[250%] h-[250%] -top-1/2 -left-[100%];
+		content: "";
+		transform: rotate(20deg);
+		background: 
+		radial-gradient(25% 2% at 20% 26%, rgba(115, 176, 255, 0.3) 0px, transparent 100%) repeat scroll 0% 0%,
+		radial-gradient(25% 2% at 25% 28%, rgba(76, 241, 123, 0.3) 0px, transparent 100%) repeat scroll 0% 0%,
+		radial-gradient(25% 2% at 30% 30%, rgba(115, 176, 255, 0.3) 0px, transparent 100%) repeat scroll 0% 0%;
+	}
+
+	.home-bg-lg {
+		@apply relative overflow-hidden;
+	}
+
+	.home-bg-lg::before {
+		@apply absolute -z-10 w-[250%] h-[250%] -top-1/2 -left-1/2;
+		content: "";
+		transform: rotate(20deg);
+		background: 
+		radial-gradient(9% 4% at 27% 46%, rgba(115, 176, 255, 0.3) 0px, transparent 100%) repeat scroll 0% 0%,
+		radial-gradient(9% 4% at 28% 51%, rgba(76, 241, 123, 0.3) 0px, transparent 100%) repeat scroll 0% 0%,
+		radial-gradient(9% 4% at 29% 56%, rgba(115, 176, 255, 0.3) 0px, transparent 100%) repeat scroll 0% 0%;
+	}
+
 	/* ------------ ANIMATION ------------------*/
 	.link-animated {
 		@apply inline-block relative

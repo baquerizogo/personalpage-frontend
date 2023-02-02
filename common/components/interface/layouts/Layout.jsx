@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
     }
     
     return (
-        <div className="w-full bg-dot-grid"> {/*bg-dot-grid class uses relative positionning*/}
+        <div className="w-full home-bg-sm lg:home-bg-lg"> {/*bg-dot-grid class uses relative positionning*/}
             <div className={`min-h-screen flex flex-col max-w-384 mx-auto`}>
                 <Header/>
                     <motion.main 
