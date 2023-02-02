@@ -11,7 +11,7 @@ const Project = ({ project }) => {
     const { t } = useTranslation("");
 
     return (
-        <div className="col-span-full lg:col-start-2 lg:col-end-12 grid grid-cols-2 gap-4 border border-gray-300 rounded-lg bg-white p-4">
+        <div className="col-span-full lg:col-start-2 lg:col-end-12 grid grid-cols-2 gap-4 shadow-lg rounded-xl bg-white p-4">
             <div className="col-span-full md:col-span-1 space-y-2">
                 <div>
                     <h1 className="text-2xl font-bold">
@@ -59,7 +59,7 @@ const Project = ({ project }) => {
             </div>
             <div className="col-span-full md:col-span-1">
                 <div className={`w-full h-44 bg-gray-100 rounded-md`}>
-                    <img src={project.imageUrl} alt="" className="w-full h-full object-cover rounded-md"/>
+                    <img src={project.imageUrl} alt="" className="w-full h-full object-cover rounded-lg"/>
                 </div>
                 <div className="flex mt-2 flex-wrap text-secondary-600">
                     {

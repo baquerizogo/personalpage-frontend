@@ -40,7 +40,7 @@ const Portfolio = () => {
 		<Layout>
 			<div className="grid-layout">
                 <div className="col-span-full lg:col-start-2 lg:col-end-12">
-                    <h3 className="text-gray-500">{t("portfolio-title", {ns: 'portfolio'})}</h3>
+                    <h3 className="text-slate-600">{t("portfolio-title", {ns: 'portfolio'})}</h3>
                 </div>
                 { list?.map((project, index) => (
                     <Fragment key={index}>

@@ -28,13 +28,13 @@ const Description = () => {
 
     return (
         <div className="lg:snap-mandatory lg:snap-y lg:overflow-scroll lg:overflow-x-hidden lg:pr-4 col-span-full mb-8 lg:mt-4 lg:col-start-2 lg:col-end-7 lg:row-start-1">
-            <div className="lg:snap-center lg:h-full">
+            <div className="lg:snap-center lg:h-full mb-12 lg:mb-0">
                 <h1 className="text-2xl font-bold mb-2">{t("description.title", {ns: 'about'})} ☕</h1>
                 <div className="space-y-4">
                     <p>{t("description.p-first", {ns: 'about'})}</p>
                     <p>{t("description.p-second", {ns: 'about'})}</p>
                     <p className="italic bg-slate-700 text-white rounded-lg px-3 py-1">{t("description.p-quote", {ns: 'about'})}</p>
-                    <div className="text-center animate-bounce flex flex-col text-slate-500">
+                    <div className="hidden text-center animate-bounce md:flex flex-col text-slate-500">
                         <FontAwesomeIcon icon={faChevronDown} size="sm"/>
                     </div>
                 </div>
