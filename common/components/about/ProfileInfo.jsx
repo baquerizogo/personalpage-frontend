@@ -11,27 +11,27 @@ const ProfileInfo = () => {
                     <img src="/images/profile.png" alt="Foto de perfil de José Baquerizo" className='rounded-3xl'/>
                 </div>
             </div>
-            <div className="my-4 space-y-4">
+            <div className="my-4 space-y-5">
                 <div className="text-center lg:text-right">
                     <h2 className="text-xl font-bold">José Antonio Baquerizo Gómez</h2>
                     <h3>@Baquerizogo</h3>
                 </div>
-                <div className="lg:text-right">
+                <div className="lg:text-right text-slate-700 text-sm">
                     <div className="space-x-2">
                         <FontAwesomeIcon icon={faGraduationCap} className="lg:!hidden"/> 
                         <span>Ing. Tecnologías de la información</span>
-                        <FontAwesomeIcon icon={faGraduationCap} className="!hidden lg:!inline"/> 
+                        <FontAwesomeIcon icon={faGraduationCap} className="!hidden lg:!inline text-xs"/> 
                     </div>
                     <div className="space-x-2">
                         <FontAwesomeIcon icon={faTreeCity} className="lg:!hidden"/> 
                         <span>he-llo</span>
-                        <FontAwesomeIcon icon={faTreeCity} className="!hidden lg:!inline"/> 
+                        <FontAwesomeIcon icon={faTreeCity} className="!hidden lg:!inline text-xs"/> 
 
                     </div>
                     <div className="space-x-2">
                         <FontAwesomeIcon icon={faMapLocationDot} className="lg:!hidden"/> 
                         <span>Ecuador</span>
-                        <FontAwesomeIcon icon={faMapLocationDot} className="!hidden lg:!inline"/> 
+                        <FontAwesomeIcon icon={faMapLocationDot} className="!hidden lg:!inline text-xs"/> 
                     </div>
                 </div>
             </div>
